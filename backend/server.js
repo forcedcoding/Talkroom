@@ -91,7 +91,7 @@ dotenv.config(); // Load environment variables
 const app = express();
 
 // --- CORS Setup ---
-const allowedOrigin = process.env.CLIENT_URL || '*';
+const allowedOrigin = process.env.CLIENT_URL;
 app.use(cors({
   origin: allowedOrigin,
   methods: ["GET", "POST"],
