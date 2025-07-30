@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import io from 'socket.io-client';
 
 // --- Establish Socket Connection ---
-const SERVER_URL = 'http://localhost:3001';
+const SERVER_URL = 'https://chatroom-gotm.onrender.com';
 const socket = io(SERVER_URL, {
   autoConnect: false // We will connect manually after user selects a room
 });
