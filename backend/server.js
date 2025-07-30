@@ -119,6 +119,10 @@ const chatRooms = {
   'Random': [],
 };
 
+app.get('/', (req, res) => {
+  res.send('🚀 Backend is running!');
+});
+
 // --- REST Endpoint to get available rooms ---
 app.get('/rooms', (req, res) => {
   res.json(Object.keys(chatRooms));
